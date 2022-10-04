@@ -1,0 +1,36 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <title>1_Hello</title>    
+    <!--
+        날찌 : 2022/10/04
+        이름 : 이상헌
+        내용 ㅣ JavaScript 조건문 실습하기
+    -->
+    </head>
+    <body>
+        <h3>조건문</h3>
+        <script>
+            //if
+            let num1 = 1;
+            let num2 = 2;
+
+            if(num1 > 0){
+                document.write('num1은 0보다 크다.</br>');
+            }
+
+            if(num1 > 0)
+                if(num12 > 1){
+                    document.write('num1은 0보다 크다.</br>');
+            }
+            
+                if(num1 > 0){
+                    document.write('num1은 0보다 크다.</br>');
+
+
+
+
+
+        </script>
+    </body>
