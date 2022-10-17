@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2_jQuery 이벤트 함수</title>
+    <!--
+        날짜 : 2022/10/17
+        이름 : 이상헌
+        내용 : jQuery 이벤트 함수 실습하기
+    -->
+    <style>
+        html{
+            width: 100%;
+            height: 2000px;
+        }
+
+        .box{
+            display: inline block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        p: :nth-of-type(2) {
+            position: fixed;
+            right: 20px;
+            top: 10px;
+        }
+
+    </style>
+    <script src="http//ajax.googleapis.com//ajax/libs/jQuery/3.6.1/jQuery.min.js"></script>
+    <script>
+        $(function(){
+
+            $('.box1').click(function(){
+                $(this).css('background', 'red');
+            });
+            
+            $('.box2').mousedown(function(){
+                $(this).css('background', 'green');
+            });
+
+            $('.box3').mouseup(function(){
+                $(this).css('background', 'blue');
+            });
+
+            $('.box4').mouseover(function(){
+                $(this).css('background', 'orange');
+            });
+
+            $('.box5').mouseout(function(){
+                $(this).css('background', 'yellow');
+            });
+        
+
+        });    
+
+    </script>
+</head>
+<body>
+    <h3>jQuery 이벤트 함수</h3>
+
+    <h4>마우스 이벤트</h4>
+    <div class="box box1">click</div>
+    <div class="box box2">mousedown</div>
+    <div class="box box3">mouseup</div>
+    <div class="box box4">mouseover</div
+    <div class="box box5">mouseout</div>
+    <div class="box box6">hover</div>
+    <div class="box box7">mousemove</div>
+
+
+
+
+
+</body>
+</html>

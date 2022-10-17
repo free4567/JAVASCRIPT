@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1_Query 이벤트</title>
+    <!--
+        날짜 : 2022/10/14
+        이름 : 이상헌
+        내용 : jQuery 이벤트 실습하기
+
+        이벤트(Event)
+        - 사용자의 특정 액션에 반응하는 핸들러 자리
+        - 클릭, 더블클릭 등 다양한 이벤트 존재
+    -->
+   <script src="http//ajax.googleapis.com//ajax/libs/jQuery/3.6.1/jQuery.min.js"></script>
+   <script>
+
+        $(document).ready(function(){
+
+            $('#btn2').on('click', function(){
+                alert('버튼2 클릭!');
+        });
+
+        $('#btn3').on('dbclick', function(){
+                alert('버튼3 더블클릭!');
+        });
+
+        $('#btn4').on('mousedown', function(){
+                alert('버튼4 마우스다운!');
+        });
+
+        $('#btn5').on('mouseup', function(){
+                alert('버튼5 마우스업!');
+        });
+
+    })    
+
+        function btn1Click(){
+            alert('버튼1 클릭!');
+
+        }
+
+
+
+
+   </script>
